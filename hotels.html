@@ -7,7 +7,7 @@
   </head>
   <body>
   
-<!------ HEADER ------>
+<!-- ===== HEADER ===== -->
   	<header class="main-header">
   	  <h1 class="visually-hidden">Гостиницы</h1>
   		<nav class="main-navigation">
@@ -23,39 +23,42 @@
   		</nav>
 	</header>
   	   
-<!------ M A I N ------>
+<!-- ===== M A I N ===== -->
 <!-- Размытое фото -->
 	<section class="filters">
     <h2 class="visually-hidden">Фильтры</h2>
 	  <form class="filter" method="get" action=https://echo.htmlacademy.ru>
-		<h3>Инфраструктура:</h3>
+ <!-- <fieldset>
+	  <legend>Инфраструктура:</legend> -->
+		<h3>Инфраструктура:</h3> 
 	      <ul>
 	        <li>
-	          <input type="checkbox" name="pool" id="filter-pool" checked>
+	          <input class="visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
 	          <label for="filter-pool">Бассейн</label>
 	        </li>
 	        <li>
-	          <input type="checkbox" name="parking" id="filter-parking">
+	          <input class="visually-hidden" type="checkbox" name="parking" id="filter-parking">
 	          <label for="filter-parking">Парковка</label>
 	        </li>
 	        <li>
-	          <input type="checkbox" name="wifi" id="filter-wifi">
+	          <input class="visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
 	          <label for="filter-wifi">WI-FI</label>
 	        </li>	
 	      </ul>
+  <!-- </fieldset> -->
 	      
 	    <h3>Тип жилья:</h3>
 	      <ul>
 	        <li>
-	          <input type="checkbox" name="hotel" id="filter-hotel" checked>
+	          <input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
 	          <label for="filter-hotel">Гостиница</label>
 	        </li>
 	        <li>
-	          <input type="checkbox" name="motel" id="filter-motel" checked>
+	          <input class="visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
 	          <label for="filter-motel">Мотель</label>
 	        </li>
 	        <li>
-	          <input type="checkbox" name="apartments" id="filter-apartments" checked>
+	          <input class="visually-hidden" type="checkbox" name="apartments" id="filter-apartments" checked>
 	          <label for="filter-apartments">Апартаменты</label>
 	        </li>	
 	      </ul>
@@ -71,8 +74,8 @@
               <td>До 3000</td>
             </tr>
 		  </table>
-		    <input type="range" min="0" max="3000"> 
-		      <button type="submit" name="show">Показать</button>
+		    <input type="range" name="range" min="0" max="3000"> 
+		      <button type="submit">Показать</button>
       </form>
 	</section>
 
@@ -87,8 +90,8 @@
 	   			<li><button>По рейтингу</button></li>
 	   		  </ul> 
 	   		  <ul class="arrows">
-	   			<li><button><img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз"></button></li>
-	   			<li><button><img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх"></button></li>
+	   			<li><button type="button"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз"></button></li>
+	   			<li><button type="button"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх"></button></li>
 	   		  </ul>
 	</section>
 	   
@@ -147,7 +150,7 @@
 	  </ul>
 	</section>
    
-<!------ FOOTER ------>
+<!-- ===== FOOTER ===== -->
   	<footer class="main-footer">
  	  <div class="footer-hashtag">
   		<h3>#visitsedona</h3>
