@@ -107,25 +107,26 @@
   	<form class="date" method="post" action="https://echo.htmlacademy.ru">
   	  <p>
   	  	<label for="date-checkin">Дата заезда:</label>
-  	  	<input id="date-checkin" type="text" name="" placeholder="24 апреля 2017">
+  	  	<input id="date-checkin" type="text" name="date-checkin" placeholder="24 апреля 2017">
   	  	<img src="img/calendar.svg" width="21" height="22" alt="Календарь">
   	  </p>
   	  <p>
   	  	<label for="date-checkout">Дата заезда:</label>
-  	  	<input id="date-checkout" type="text" name="" placeholder="4 июля 2017">
+  	  	<input id="date-checkout" type="text" name="date-checkin" placeholder="4 июля 2017">
   	  	<img src="img/calendar.svg" width="21" height="22" alt="Календарь">
   	  </p>
-  	  
-  	  Взрослые: - 2 +
-  	  
-  	  Дети: - 0 +
-  	  
-  	  <button type="submit">Найти</button>
-  		
-  	</form>
-  	
-<!---------- ФОРМА ---------->
-  	
+  	  <div class="number">
+  	  	<label for="number-of-adults">Взрослые:</label>
+  	  	  <button name="minus-adult">-</button>
+  	  	    <input id="number-of-adults" type="text" name="number-of-adults" value="2">
+  	  	      <button name="plus-adult">+</button>
+  	  	<label for="number-of-children">Дети:</label>
+  	  	  <button name="minus-child">-</button>
+  	  	    <input id="number-of-children" type="text" name="number-of-children" value="2">
+  	  	      <button name="plus-child">+</button>
+  	  </div>
+  	  <button type="submit" name="find">Найти</button>
+  	</form>  	
   	</section>
   	</main>
   	

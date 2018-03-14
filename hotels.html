@@ -27,8 +27,8 @@
 <!-- Размытое фото -->
 	<section class="filters">
     <h2 class="visually-hidden">Фильтры</h2>
-	  <form class="filter" method="get" action=https://echo.htmlacademy.ru></form>
-	    <legend>Инфраструктура:</legend>
+	  <form class="filter" method="get" action=https://echo.htmlacademy.ru>
+		<h3>Инфраструктура:</h3>
 	      <ul>
 	        <li>
 	          <input type="checkbox" name="pool" id="filter-pool" checked>
@@ -44,7 +44,7 @@
 	        </li>	
 	      </ul>
 	      
-	    <legend>Тип жилья:</legend>
+	    <h3>Тип жилья:</h3>
 	      <ul>
 	        <li>
 	          <input type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -59,19 +59,21 @@
 	          <label for="filter-apartments">Апартаменты</label>
 	        </li>	
 	      </ul>
+	  </form>
 	</section>
 	      
-	<section class="price">
-	<h3 class="visually-hidden">Цена</h3>
-	  <legend>Стоимость в сутки (Р):</legend>
-	    <table border="1">
-          <tr>
-            <td>От 0</td>
-            <td>До 3000</td>
-          </tr>
-		</table>
-		  <input type="range" min="0" max="3000"> 
-		    <button type="submit">Показать</button>
+	<section class="prices">
+      <form class="price" method="get" action="https://echo.htmlacademy.ru">
+	    <h3>Стоимость в сутки (Р):</h3>
+	      <table>
+            <tr>
+              <td>От 0</td>
+              <td>До 3000</td>
+            </tr>
+		  </table>
+		    <input type="range" min="0" max="3000"> 
+		      <button type="submit" name="show">Показать</button>
+      </form>
 	</section>
 
 	<section class="results-header">
