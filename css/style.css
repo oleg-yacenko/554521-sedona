@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #000000;
+	text-transform: uppercase;
+	
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ===== HEADER ===== */
+header {
+	background-image: url("/img/background-all.jpg");
+	background-repeat: no-repeat;
+}
+
+.main-navigation {
+	font-weight: bold;
+	line-height: 26px;
+	color: #000000;
+	
+	background-color: #ffffff;
+}
+
+.site-navigation, .main-navigation {
+	list-style: none;
+}
+
+.site-navigation a, .main-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover, .main-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:focus, .main-navigation a:focus {
+	color: #cacaca;
+}
+
+/* ===== MAIN = Index ===== */
+.benefits-top-list, .benefits-bottom-list {
+	list-style: none;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #000000;
+}
+
+h3 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 21px; /* ===== Кое-где 26px ===== */
+	color: #000000;
+	text-align: center;
+}
+
+.feature-item {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.feature-item h3 {
+	color: #ffffff;
+}
+
+.benefits-top {
+	background-color: #ffffff;
+}
+
+.benefits-bottom {
+	background-color: #eeeeee;
+}
+
+.interesting p {
+	line-height: 24px;
+}
+
+.hotel-search h3 {
+	background-color: #766357;
+	color: #ffffff;
+}
+
+.hotel-search {
+	font-weight: bold;
+	line-height: 26px;
+}
+
+button {
+	font: inherit;
+	background-color: #f2f2f2;
+	color: #a9a9a9;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	border: none;
+}
+
+.hotel-search .search {
+	background-color: #81b3d2;
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+/* ===== MAIN = Hotels ===== */
+.filters {
+	background-image: url("/img/background-photo.jpg");
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+.filters li {
+	list-style: none;
+}
+
+.filters legend {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.results-header li {
+	list-style: none;
+}
+
+.results-header span:first-of-type {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.results-header span:nth-of-type(2) {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.results-header button {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.results-main li {
+	list-style: none;
+}
+
+/* ===== FOOTER =====*/
+.footer-social {
+	list-style: none;
+}
+
+.footer-social li {
+	background-color: #81b3d2;
+}
