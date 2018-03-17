@@ -97,14 +97,55 @@ h3 {
 	line-height: 26px;
 }
 
-button {
+.btn {
 	font: inherit;
-	background-color: #f2f2f2;
 	color: #a9a9a9;
 	text-align: center;
-	text-transform: uppercase;
 	vertical-align: middle;
+	text-transform: uppercase;
 	border: none;
+}
+
+.results-main .button {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.results-main .buy {
+	background-color: #81b3d2;
+}
+
+.results-main .buy:hover {
+	background-color: #669ec0;
+}
+
+.results-main .buy:active {
+	color: #88b6d1;
+	background-color: #5496bd;
+}
+
+.results-main .more {
+	background-color: #766357;
+}
+
+.results-main .more:hover {
+	background-color: #604e43;
+}
+
+.results-main .more:active {
+	color: #857871;
+	background-color: #503e33;
+}
+
+.btn.show {
+	color: #ffffff;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+}
+
+.btn.show:active, .btn.show:hover {
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .hotel-search .search {
@@ -114,12 +155,31 @@ button {
 	line-height: 26px;
 }
 
+.date input {
+	background-color: #f2f2f2;
+}
+
+.date input[type="text"] {
+	height: 38px;
+	border: none;
+}
+
+.date input::placeholder {
+	color: #000000;
+}
+
+.number button {
+	color: #a9a9a9;
+}
+
 /* ===== MAIN = Hotels ===== */
 .filters {
+	background-color: #e3f0f9;
 	background-image: url("/img/background-photo.jpg");
 	background-repeat: no-repeat;
 	color: #ffffff;
 }
+
 .filters li {
 	list-style: none;
 }
@@ -133,12 +193,22 @@ button {
 	list-style: none;
 }
 
-.results-header span:first-of-type {
+.results-sort-variants button {
+	color: #b1b1b1;
+	text-decoration: underline; /* Как сделать подчеркивание dotted и другого цвета??? */
+}
+
+.results-sort-variants .pushed {
+	text-decoration: none;
+	color: #81b3d2;
+}
+
+.results-header .results-number {
 	font-size: 21px;
 	font-weight: bold;
 }
 
-.results-header span:nth-of-type(2) {
+.results-header .results-sort {
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -152,7 +222,11 @@ button {
 	list-style: none;
 }
 
-/* ===== FOOTER =====*/
+.site-navigation .site-navigation-current a {
+	color: #766357;
+}
+
+/* ===== FOOTER ===== */
 .footer-social {
 	list-style: none;
 }
