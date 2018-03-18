@@ -16,10 +16,17 @@ a {
 	text-decoration: none;
 }
 
+main p {
+	color: #333333;
+}
+
 /* ===== HEADER ===== */
-header {
-	background-image: url("/img/background-all.jpg");
-	background-repeat: no-repeat;
+.main-header-logo {
+	display: inline-block;
+}
+
+.main-header-logo img {
+	vertical-align: middle;
 }
 
 .main-navigation {
@@ -46,19 +53,31 @@ header {
 	color: #cacaca;
 }
 
+.intro-logo {
+	min-height: 564px;
+	background-image: url("../img/background-all.jpg");
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+
 /* ===== MAIN = Index ===== */
+}
+
+.feature-item p {
+	color: #ffffff;
+}
+
 .benefits-top-list, .benefits-bottom-list {
 	list-style: none;
 }
 
-h2 {
+.title-2 {
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 36px;
 	color: #000000;
 }
 
-h3 {
+.title-3 {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 21px; /* ===== Кое-где 26px ===== */
@@ -155,6 +174,15 @@ h3 {
 	line-height: 26px;
 }
 
+.hotel-search .search:hover {
+	background-color: #669ec0;
+}
+
+.hotel-search .search:active {
+	background-color: #5496bd;
+	color: #88b6d1;
+}
+
 .date input {
 	background-color: #f2f2f2;
 }
@@ -166,6 +194,15 @@ h3 {
 
 .date input::placeholder {
 	color: #000000;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.date p {
+	color: #000000;
 }
 
 .number button {
@@ -175,7 +212,7 @@ h3 {
 /* ===== MAIN = Hotels ===== */
 .filters {
 	background-color: #e3f0f9;
-	background-image: url("/img/background-photo.jpg");
+	background-image: url("../img/background-photo.jpg");
 	background-repeat: no-repeat;
 	color: #ffffff;
 }
@@ -195,11 +232,11 @@ h3 {
 
 .results-sort-variants button {
 	color: #b1b1b1;
-	text-decoration: underline; /* Как сделать подчеркивание dotted и другого цвета??? */
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .results-sort-variants .pushed {
-	text-decoration: none;
+	border: none;
 	color: #81b3d2;
 }
 
@@ -234,3 +271,11 @@ h3 {
 .footer-social li {
 	background-color: #81b3d2;
 }
+
+.footer-social li:hover {
+	background-color: #669ec0;
+}
+
+.footer-social li:active {
+	background-color: #5496bd;
+} /* ===== И цвет самой иконки меняется. Как? ===== */
