@@ -21,8 +21,15 @@ main p {
 }
 
 /* ===== HEADER ===== */
+.main-header {
+	min-height: 200px; /* === 6 === */
+	margin-bottom: 100px; /* === 6 === */
+}
+
 .main-header-logo {
 	display: inline-block;
+	width: 138px; /* === 6 === */
+	height: 70px; /* === 6 === */
 }
 
 .main-header-logo img {
@@ -35,6 +42,18 @@ main p {
 	color: #000000;
 	
 	background-color: #ffffff;
+	
+	width: 1200px; /* === 6 === */
+	min-height: 150px; /* === 6 === */
+	
+	display: flex; /* === 6 === */
+}
+
+.site-navigation {
+	min-height: 56px; /* === 6 === */
+	width: 100%; /* === 6 === */
+	display: flex; /* === 6 === */
+	justify-content: space-between;
 }
 
 .site-navigation, .main-navigation {
@@ -58,8 +77,21 @@ main p {
 	background-image: url("../img/background-all.jpg");
 	background-repeat: no-repeat;
 	background-color: #ffffff;
+}
 
 /* ===== MAIN = Index ===== */
+/*
+.features {
+	display: flex;
+}
+*/
+
+.features-top {
+	display: flex; /* === 6 === */
+}
+
+.features-bottom {
+	display: flex; /* === 6 === */
 }
 
 .feature-item p {
@@ -68,6 +100,7 @@ main p {
 
 .benefits-top-list, .benefits-bottom-list {
 	list-style: none;
+	display: flex; /* === 6 === */
 }
 
 .title-2 {
@@ -88,6 +121,9 @@ main p {
 .feature-item {
 	color: #ffffff;
 	background-color: #81b3d2;
+	
+	min-height: 256px; /* === 6 === */
+	width: 400px; /* === 6 === */
 }
 
 .feature-item h3 {
@@ -98,8 +134,15 @@ main p {
 	background-color: #ffffff;
 }
 
-.benefits-bottom {
+.benefit-top-item {
+	min-height: 330px; /* === 6 === */
+	width: 400px; /* === 6 === */
+}
+
+.benefit-bottom-item {
 	background-color: #eeeeee;
+	min-height: 256px; /* === 6 === */
+	width: 400px; /* === 6 === */
 }
 
 .interesting p {
@@ -183,6 +226,15 @@ main p {
 	color: #88b6d1;
 }
 
+.hotel-search .title-3:hover {
+	background-color: #604e43;
+} /* ===== Это кнопка что ли? ===== */
+
+.hotel-search .title-3:active {
+	background-color: #503e33;
+	color: #857871;
+} /* ===== Это кнопка что ли? ===== */
+
 .date input {
 	background-color: #f2f2f2;
 }
@@ -201,8 +253,20 @@ main p {
 	text-transform: uppercase;
 }
 
+.date input:hover {
+	background-color: #ebebeb;
+}
+
+.date input:focus {
+	background-color: #ffffff;
+}
+
 .date p {
 	color: #000000;
+}
+
+.number .adults, .number .children {
+	font: inherit;
 }
 
 .number button {
@@ -264,12 +328,19 @@ main p {
 }
 
 /* ===== FOOTER ===== */
+.main-footer {
+	display: flex; /* === 6 === */
+}
+
 .footer-social {
 	list-style: none;
+	display: flex; /* === 6 === */
 }
 
 .footer-social li {
 	background-color: #81b3d2;
+	width: 46px;
+	height: 48px;
 }
 
 .footer-social li:hover {
@@ -278,4 +349,4 @@ main p {
 
 .footer-social li:active {
 	background-color: #5496bd;
-} /* ===== И цвет самой иконки меняется. Как? ===== */
+} /* ===== И цвет самой иконки меняется. Как? Opacity? ===== */

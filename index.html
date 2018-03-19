@@ -32,6 +32,7 @@
   	    <h2 class="title-2 visually-hidden">Преимущества</h2>
   	  
 	<section class="features">
+ 	  <div class="features-top">
   	  <div class="feature-item">
   	    <h3 class="title-3">Настоящий городок</h3>
   		  <p>- №1 -</p>
@@ -40,6 +41,7 @@
   	   <div class="feature-pic">
   	     <img src="img/city-view.jpg" width="800" height="256" alt="Вид на город">
   	   </div>
+ 	   </div>
   				  		
   	<section class="benefits-top">
   	  <ul class="benefits-top-list">
@@ -60,7 +62,8 @@
   		</li>
   	  </ul>
   	</section>
-  					
+  			
+  		<div class="features-bottom">		
   		<div class="feature-item">
   		  <h3 class="title-3">Там есть Мост Дьявола</h3>
   			<p>- №2 -</p>
@@ -69,6 +72,7 @@
   		  <div class="feature-pic">
   			<img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
   		</div>
+ 		</div>
   						
   	<section class="benefits-bottom">
   	  <ul class="benefits-bottom-list">
@@ -104,27 +108,27 @@
   	<section class="hotel-search">
  	  
 <!-- ===== ФОРМА ===== -->	
-  	<h3 class="title-3">Поиск гостиницы в Седоне</h3>
+  	<h3 class="title-3">Поиск гостиницы в Седоне</h3> <!-- ===== Это кнопка что ли? ===== -->
   	
   	<form class="date" method="post" action="https://echo.htmlacademy.ru">
   	  <p>
   	  	<label for="date-checkin">Дата заезда:</label>
   	  	<input id="date-checkin" type="text" name="date-checkin" value="" placeholder="24 апреля 2017">
-  	  	<img src="img/calendar.svg" width="21" height="22" alt="Календарь">
+  	  	<img class="img-calendar" src="img/calendar.svg" width="21" height="22" alt="Календарь">
   	  </p>
   	  <p>
   	  	<label for="date-checkout">Дата заезда:</label>
   	  	<input id="date-checkout" type="text" name="date-checkin" value="" placeholder="4 июля 2017">
-  	  	<img src="img/calendar.svg" width="21" height="22" alt="Календарь">
+  	  	<img class="img-calendar" src="img/calendar.svg" width="21" height="22" alt="Календарь">
   	  </p>
   	  <div class="number">
   	  	<label for="number-of-adults">Взрослые:</label>
   	  	  <button class="btn" name="minus-adult" type="button">-</button>
-  	  	    <input id="number-of-adults" type="text" name="number-of-adults" value="2">
+  	  	    <input class="adults" id="number-of-adults" type="text" name="number-of-adults" value="2">
   	  	      <button class="btn" name="plus-adult" type="button">+</button>
   	  	<label for="number-of-children">Дети:</label>
   	  	  <button class="btn" name="minus-child" type="button">-</button>
-  	  	    <input id="number-of-children" type="text" name="number-of-children" value="0">
+  	  	    <input class="children" id="number-of-children" type="text" name="number-of-children" value="0">
   	  	      <button class="btn" name="plus-child" type="button">+</button>
   	  </div>
   	  <button class="btn search" type="submit">Найти</button>
