@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <div class="wrapper">
   
 <!-- ===== HEADER ===== -->
   	<header class="main-header">
@@ -63,8 +64,24 @@
 	        </li>	
 	      </ul>
 	</fieldset>
+    
+    <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (Р):</div>
+        <div class="price-controls">
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+		  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+          	<div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+          <button class="btn show" type="submit">Показать</button>
+        </div>
+    </div>
      
-	<fieldset>
+<!--	<fieldset>
 	  <legend>Стоимость в сутки (Р):</legend>
 	      <table>
             <tr>
@@ -74,7 +91,7 @@
 		  </table>
 		    <input type="range" name="range" min="0" max="3000"> 
 		      <button class="btn show" type="submit">Показать</button>
-	</fieldset>
+	</fieldset>-->
     </form>
 	</section>
 
@@ -166,5 +183,6 @@
   		  </a>
   	  </div>
   	</footer>
+  	</div>
   </body>
 </html>
