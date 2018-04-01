@@ -117,9 +117,7 @@ main p {
 
 .site-navigation {
 	margin: 0;
-	padding-top: 13px;
-    padding-bottom: 17px;
-	padding-left: 0px;
+	padding: 14px 72px;
 	display: flex;
 	justify-content: space-between;
     line-height: 26px;
@@ -130,7 +128,6 @@ main p {
 }
 
 .site-navigation li:first-child {
-	padding-left: 72px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -141,7 +138,7 @@ main p {
 	text-align: right;
 }
 
-.navigation-list li:last-child {
+.site-navigation li:last-child {
 	text-align: right;
 }
 
@@ -153,10 +150,6 @@ main p {
 	color: #000000;
 	display: block;
 	vertical-align: middle;
-}
-
-.main-navigation a {
-	position: absolute;
 }
 
 .site-navigation a:hover, .main-navigation a:hover {
@@ -173,7 +166,7 @@ main p {
 }
 
 .intro-logo {
-	min-height: 564px;
+	min-height: 508px;
 	background-image: url("../img/background-all.jpg");
 	background-repeat: no-repeat;
 	background-color: #ffffff;
@@ -443,6 +436,7 @@ main p {
 
 .hotel-search .search {
 	width: 456px;
+	padding: 15px 50px;
 	background-color: #81b3d2;
 	color: #ffffff;
 	font-size: 21px;
@@ -468,18 +462,34 @@ main p {
 }
 
 .date {
-	width: 568px;
-	height: 396px;
 	position: absolute;
+	margin-bottom: auto;
 	top: 86px;
+	padding: 55px;
 	left: 50%;
 	transform: translateX(-50%);
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	flex-direction: column;
 	background-color: #ffffff;
-	box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
+}
+
+.date-check {
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date-placeholder {
+	position: relative;
+}
+
+.calendar {
+	background: none;
+	box-shadow: none;
+	border: none;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .date input {
@@ -511,10 +521,18 @@ main p {
 .date #date-checkin, .date #date-checkout {
 	width: 330px;
 	padding-left: 14px;
+	padding-right: 38px;
 }
 
 .date p {
 	color: #000000;
+}
+
+.number {
+	margin-bottom: 55px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .number .adults, .number .children {
@@ -528,24 +546,76 @@ main p {
 }
 
 /* ===== MAIN = Hotels ===== */
+.filter {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 25px 70px 0;
+}
+
+.filter fieldset {
+	margin: 0;
+	padding: 0;
+	width: 254px;
+	border: none;
+}
+
 .filters {
-	background-color: #e3f0f9;
+	width: 1200px;
+	min-height: 217px;
+	background-color: #669ec0;
 	background-image: url("../img/background-photo.jpg");
 	background-repeat: no-repeat;
+	background-position: center;
+	
 	color: #ffffff;
 }
 
-.filters li {
+.filter-list {
+	margin: 0;
+	position: relative;
 	list-style: none;
 }
 
+.filters li {
+	margin-bottom: 24px;
+}
+
 .filters legend {
+	margin-bottom: 28px;
 	font-size: 16px;
 	font-weight: bold;
 }
 
+.results-header {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	padding: 0 70px;
+}
+
 .results-header li {
 	list-style: none;
+}
+
+.results-header .arrows {
+	padding-left: 0;
+	display: flex;
+}
+
+.arrows .btn img {
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+.arrows .btn img:hover {
+	opacity: 1;
+}
+
+.results-sort-variants {
+	display: flex;
+    width: 816px;
+    vertical-align: bottom;
+    padding-top: 5px;
 }
 
 .results-sort-variants button {
@@ -577,6 +647,18 @@ main p {
 	list-style: none;
 }
 
+.hotels-list {
+	display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.hotel-item {
+	display: flex;
+	border-top: 1px solid #e5e5e5;
+    padding: 20px 70px 30px;
+}
+
 .site-navigation .site-navigation-current a {
 	color: #766357;
 }
@@ -605,10 +687,18 @@ main p {
 .footer-social {
 	list-style: none;
 	display: flex;
+	padding-left: 0;
 }
 
 .footer-social li {
 	margin-left: 6px;
+}
+
+.footer-social li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
 	background-color: #81b3d2;
 	width: 46px;
 	height: 48px;
@@ -618,10 +708,10 @@ main p {
 	margin-left: 0;
 }
 
-.footer-social li:hover {
+.footer-social li a:hover {
 	background-color: #669ec0;
 }
 
-.footer-social li:active {
+.footer-social li a:active {
 	background-color: #5496bd;
 } /* ===== И цвет самой иконки меняется. Как? Opacity? ===== */

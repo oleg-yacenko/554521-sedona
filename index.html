@@ -101,18 +101,23 @@
   	  <h2 class="title-2">Заинтересовались?</h2>
   		<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
   	<section class="hotel-search">	
-  	<button class="hotel-search-btn" type="submit">Поиск гостиницы в Седоне</button> <!--Это кнопка, верно?-->
+  	<button class="hotel-search-btn" type="submit">Поиск гостиницы в Седоне</button>
+<!-- -->  	<div class="modal modal-date state-open">
   	<form class="date" method="post" action="https://echo.htmlacademy.ru">
-  	  <p>
+  	  <div class="date-check">
   	  	<label for="date-checkin">Дата заезда:</label>
+  	  	<div class="date-placeholder">
   	  	<input id="date-checkin" type="text" name="date-checkin" value="" placeholder="24 апреля 2017">
-  	  	<img class="img-calendar" src="img/calendar.svg" width="21" height="22" alt="Календарь">
-  	  </p>
-  	  <p>
+  	  	<button class="calendar"><img class="img-calendar" src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
+  	  	</div>
+  	  </div>
+  	  <div class="date-check">
   	  	<label for="date-checkout">Дата заезда:</label>
+  	  	<div class="date-placeholder">
   	  	<input id="date-checkout" type="text" name="date-checkin" value="" placeholder="4 июля 2017">
-  	  	<img class="img-calendar" src="img/calendar.svg" width="21" height="22" alt="Календарь">
-  	  </p>
+  	  	<button class="calendar"><img class="img-calendar" src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
+		</div>
+  	  </div>
   	  <div class="number">
   	  	<label for="number-of-adults">Взрослые:</label>
   	  	  <button class="btn" name="minus-adult" type="button">-</button>
@@ -124,7 +129,8 @@
   	  	      <button class="btn" name="plus-child" type="button">+</button>
   	  </div>
   	  <button class="btn search" type="submit">Найти</button>
-  	</form>  	
+  	</form>
+<!-- -->  	</div>  	
   	</section>
   	<section class="map">
  	  <h2 class="title-2 visually-hidden">Седона на карте</h2>
