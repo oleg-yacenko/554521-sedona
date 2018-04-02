@@ -11,7 +11,7 @@ body {
 	background-color: #ffffff;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
     box-sizing: inherit;
 }
 
@@ -37,10 +37,6 @@ img {
 	line-height: 21px; /* ===== Кое-где 26px ===== */
 	color: #000000;
 	text-align: center;
-}
-
-main p {
-	color: #333333;
 }
 
 .wrapper {
@@ -76,7 +72,6 @@ main p {
 }
 
 .main-header-logo {
-	display: inline-block;
 	width: 138px;
 	height: 70px;
 	position: absolute;
@@ -91,6 +86,7 @@ main p {
 
 .sedona-title {
 	width: 636px;
+	padding: 0 30px;
 	margin: 0 auto;
 }
 
@@ -146,7 +142,6 @@ main p {
 
 .site-navigation a, .main-navigation a {
 	color: #000000;
-	display: block;
 	vertical-align: middle;
 }
 
@@ -167,7 +162,7 @@ main p {
 	min-height: 508px;
 	background-image: url("../img/background-all.jpg");
 	background-repeat: no-repeat;
-	background-color: #ffffff;
+	background-color: #81b3d2;
 }
 
 /* ===== MAIN = Index ===== */
@@ -299,6 +294,9 @@ main p {
 }
 
 .results-main .buy {
+	padding: 3px 15px;
+	vertical-align: middle;
+	text-align: center;
 	background-color: #81b3d2;
 }
 
@@ -312,6 +310,9 @@ main p {
 }
 
 .results-main .more {
+	padding: 3px 15px;
+	vertical-align: middle;
+	text-align: center;
 	background-color: #766357;
 }
 
@@ -459,10 +460,28 @@ main p {
 	color: #857871;
 }
 
+.modal-date {
+    height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 86px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.modal-date.state-open {
+    height: 385px;
+    visibility: visible;
+    opacity: 1;
+}
+
 .date {
 	position: absolute;
 	margin-bottom: auto;
-	top: 86px;
+	top: 0;
 	padding: 55px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -491,6 +510,7 @@ main p {
 }
 
 .date input {
+    font: inherit;
 	background-color: #f2f2f2;
 }
 
@@ -600,12 +620,12 @@ main p {
 	display: flex;
 }
 
-.arrows .btn img {
+.arrows .arrow-btn img {
 	opacity: 0.3;
 	cursor: pointer;
 }
 
-.arrows .btn img:hover {
+.arrows .arrow-btn img:hover {
 	opacity: 1;
 }
 
@@ -616,9 +636,19 @@ main p {
     padding-top: 5px;
 }
 
-.results-sort-variants button {
+.results-sort-variants .sort-btn {
+	font-size: 12px;
+    line-height: 18px;
 	color: #b1b1b1;
 	border-bottom: 1px dotted #81b3d2;
+}
+
+.results-sort-variants .sort-btn:hover {
+	color: #81b3d2;
+}
+
+.results-sort-variants .sort-btn:active {
+	color: #000000;
 }
 
 .results-sort-variants .pushed {
@@ -657,6 +687,69 @@ main p {
     padding: 20px 70px 30px;
 }
 
+.hotel-item:last-child {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-item-image {
+	width: 165px;
+	padding-top: 5px;
+}
+
+.hotel-item-column-main {
+	flex-grow: 1;
+	min-width: 300px;
+}
+
+.hotel-item-card h3 {
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.hotel-item-card .hotel-item-card-link:hover {
+	color: #81b3d2;
+}
+
+.hotel-item-card .hotel-item-card-link:active {
+	color: #b1b1b1;
+}
+
+.hotel-item-card-columns {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hotel-item-card-column-1, .hotel-item-card-column-2 {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 110px;
+	padding-right: 7px;
+}
+
+.hotel-item-card-column-2 {
+	flex-basis: 145px;
+}
+
+.hotel-item-card-column-1 span, .hotel-item-card-column-2 span {
+	margin-bottom: 15px;
+}
+
+.hotel-item-rating {
+	min-width: 110px;
+	text-align: right;
+}
+
+.hotel-item-rating ul {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 40px;
+}
+
+.hotel-item-rating ul li {
+	margin-left: 4px;
+}
+
 .site-navigation .site-navigation-current a {
 	color: #766357;
 }
@@ -668,6 +761,12 @@ main p {
 	width: 1200px;
 	justify-content: space-between;
 	align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer.negative-margin {
+    margin-top: -120px;
+    position: relative;
 }
 
 .footer-hashtag {
@@ -713,3 +812,7 @@ main p {
 .footer-social li a:active {
 	background-color: #5496bd;
 } /* ===== И цвет самой иконки меняется. Как? Opacity? ===== */
+
+.footer-copyright .by {
+	margin-right: 10px;
+}

@@ -2,35 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-      <title>Седона</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+    <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-  <div class="wrapper">
   
-<!-- ===== HEADER ===== -->
-  	<header class="main-header">
- 	<div class="inner-header">
-  	  <h1 class="visually-hidden">Седона</h1>
-  		<nav class="main-navigation">
- 		  <a class="main-header-logo">
-  		    <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип сайта Седона">
-  		  </a>
-  			<ul class="site-navigation">
-  			  <li><a href="#">Информация</a></li>
-  			  <li><a href="#">Фото и видео</a></li>
-  			  <li><a href="#">Карта штата</a></li>
-  			  <li><a href="hotels.html">Гостиницы</a></li>
-  			</ul>
-  		</nav>
-	</div>
- 	      <div class="intro-logo"></div>
- 	      <div class=header-wrapper>
-  	        <div class="sedona-title"><h3 class="title-3">Седона – небольшой городок в Аризоне,<br>заслуживающий большего!</h3></div>
-  	         <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-		  </div>
-  	</header>
+  <body>
+    <div class="wrapper">
+      <!-- ===== HEADER ===== -->
+        <header class="main-header">
+          <div class="inner-header">
+            <h1 class="visually-hidden">Седона</h1>
+             
+            <nav class="main-navigation">
+              <a class="main-header-logo">
+                <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип сайта Седона">
+              </a>
+               
+              <ul class="site-navigation">
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+          <div class="intro-logo"></div>
+          
+           <div class=header-wrapper>
+             <div class="sedona-title"><h3 class="title-3">Седона – небольшой городок в Аризоне, заслуживающий большего!</h3></div>
+             <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
+        </header>
   	
 <!-- ===== M A I N ===== -->
   	<main class="container">
@@ -100,9 +104,10 @@
   	<section class="interesting">
   	  <h2 class="title-2">Заинтересовались?</h2>
   		<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  	<section class="hotel-search">	
-  	<button class="hotel-search-btn" type="submit">Поиск гостиницы в Седоне</button>
-<!-- -->  	<div class="modal modal-date state-open">
+  	<section class="hotel-search">
+  	<button class="hotel-search-btn" id="search-btn">Поиск гостиницы в Седоне</button>
+  	
+    <div class="modal-date" id="modal-search">
   	<form class="date" method="post" action="https://echo.htmlacademy.ru">
   	  <div class="date-check">
   	  	<label for="date-checkin">Дата заезда:</label>
@@ -130,8 +135,9 @@
   	  </div>
   	  <button class="btn search" type="submit">Найти</button>
   	</form>
-<!-- -->  	</div>  	
+  	</div>
   	</section>
+  	
   	<section class="map">
  	  <h2 class="title-2 visually-hidden">Седона на карте</h2>
   	    <img src="img/map.jpg" width="1200" height="593" alt="Седона на карте">
@@ -140,23 +146,24 @@
   	</main>
   	
 <!-- ===== FOOTER ===== -->
-  	<footer class="main-footer">
+  	<footer class="main-footer negative-margin">
  	  <div class="footer-hashtag">
   	    <h3 class="title-3">#visitsedona</h3>
   	  </div>
   		<ul class="footer-social">
-		  <li><a href="#" class="social-button"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-		  <li><a href="#" class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-		  <li><a href="#" class="social-button"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
+		  <li><a href="#" class="social-button" aria-label="Twitter"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+		  <li><a href="#" class="social-button" aria-label="Facebook"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+		  <li><a href="#" class="social-button" aria-label="YouTube"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
   		</ul>
   	  <div class="footer-copyright">
-  	    <span>Website by</span>
+  	    <span class="by">Website by</span>
   		  <a href="https://htmlacademy.ru/intensive/htmlcss">
   		    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Профессиональный HTML и CSS, уровень 1">
   		  </a>
   	  </div>
   	</footer>
   	</div>
-  	<!--SCRIPT-->
+  	
+  	<script src="js/script.js"></script>
   </body>
 </html>
