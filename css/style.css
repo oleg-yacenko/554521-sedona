@@ -1,24 +1,3 @@
-/*html {
-    position: relative;
-}
-
-html::before {
-    content: "";
-    position: absolute;
-    z-index: 9;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    display: block;
-    background-image: url(../img/sedona-index-1200.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    opacity: 0.1;
-    pointer-events: none;
-}*/
-
 body {
 	margin: 0;
 	padding: 0;
@@ -85,10 +64,6 @@ img {
 	position: relative;
 }
 
-.inner-header {
-
-}
-
 .main-header-logo {
 	width: 138px;
 	height: 70px;
@@ -138,10 +113,6 @@ img {
 
 .site-navigation li {
 	width: 23%;
-}
-
-.site-navigation li:first-child {
-
 }
 
 .site-navigation li:nth-child(2), .site-navigation li:nth-child(3) {
@@ -684,7 +655,6 @@ img {
 
 .results-header {
 	display: flex;
-	flex-wrap: wrap;
     align-items: center;
     margin-top: 12px;
 	padding: 0 70px;
@@ -698,11 +668,15 @@ img {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    max-width: 82%;
+    max-width: 81%;
 }
 
 .results-header li {
 	list-style: none;
+}
+
+.arrows li:first-child {
+    margin-right: 12px;
 }
 
 .results-sort-variants li {
@@ -777,6 +751,7 @@ img {
 .hotels-list {
 	display: flex;
 	flex-direction: column;
+    margin-bottom: 0;
 	padding: 0;
 }
 
@@ -874,6 +849,10 @@ img {
 	position: relative;
 }
 
+.footer-hotels {
+    min-height: 120px;
+}
+
 .footer-hashtag {
 	margin-left: 132px;
 }
@@ -918,8 +897,6 @@ img {
 .footer-social a:active {
 	background-color: #5496bd;
 }
-
-/* ===== И цвет самой иконки меняется. Как? Opacity? ===== */
 
 .footer-copyright .by {
 	margin-right: 5px;
