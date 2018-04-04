@@ -1,4 +1,4 @@
-html {
+/*html {
     position: relative;
 }
 
@@ -12,12 +12,12 @@ html::before {
     bottom: 0;
     height: 100%;
     display: block;
-    background-image: url(../img/sedona-hotels-1200.jpg);
+    background-image: url(../img/sedona-index-1200.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    opacity: 0.2;
+    opacity: 0.1;
     pointer-events: none;
-}
+}*/
 
 body {
 	margin: 0;
@@ -313,40 +313,49 @@ img {
 	color: #ffffff;
 }
 
-.results-main .buy {
+.results-main .more {
 	padding: 3px 15px;
 	vertical-align: middle;
 	text-align: center;
 	background-color: #81b3d2;
 }
 
-.results-main .buy:hover {
+.results-main .more:hover {
 	background-color: #669ec0;
 }
 
-.results-main .buy:active {
+.results-main .more:active {
 	color: #88b6d1;
 	background-color: #5496bd;
 }
 
-.results-main .more {
+.results-main .book {
 	padding: 3px 15px;
 	vertical-align: middle;
 	text-align: center;
 	background-color: #766357;
 }
 
-.results-main .more:hover {
+.results-main .book:hover {
 	background-color: #604e43;
 }
 
-.results-main .more:active {
+.results-main .book:active {
 	color: #857871;
 	background-color: #503e33;
 }
 
+.results-main .hotel-item-image {
+    margin-right: 3px;
+}
+
+.results-main .hotel-item-card-column-1 {
+    margin-right: 2px;
+}
+
 .filter-range {
-	width: 330px;
+    margin-top: 2px;
+    margin-right: 2px;
 }
 
 .filter-range-title {
@@ -354,6 +363,7 @@ img {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
+    letter-spacing: 0.3px;
 }
 
 .price-controls {
@@ -379,14 +389,18 @@ img {
 .price-controls label {
 	display: inline-block;
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 32px;
 	vertical-align: top;
 	cursor: pointer;
 }
 
 .price-controls .min-price, .price-controls .max-price {
-	width: 90px;
-	padding-left: 65px;
+	width: 158px;
+	padding-left: 66px;
+}
+
+.price-controls .max-price {
+    padding-left: 54px;
 }
 
 .price-controls input {
@@ -400,7 +414,6 @@ img {
 
 .range-controls {
 	position: relative;
-	margin-bottom: 32px;
 }
 
 .range-controls .scale {
@@ -415,6 +428,7 @@ img {
 }
 
 .range-toggle {
+    box-sizing: content-box;
 	position: absolute;
 	top: -9px;
 	width: 4px;
@@ -441,7 +455,7 @@ img {
 .btn.show {
 	display: block;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 32px;
 	padding: 6px 35px;
 	color: #ffffff;
 	background-color: transparent;
@@ -575,6 +589,11 @@ img {
 	align-items: center;
 }
 
+.number .adults-group, .number .children-group {
+    display: flex;
+    align-items: center;
+}
+
 .number .adults, .number .children {
 	font: inherit;
 	width: 36px;
@@ -585,6 +604,16 @@ img {
 	color: #a9a9a9;
 }
 
+.adults-group .btn, .children-group .btn {
+    font-size: 18px;
+    background-color: #f2f2f2;
+    padding: 6px 14px;
+}
+
+.adults-group label, .children-group label {
+    margin-right: 46px;
+}
+
 .map .map-google {
     background-color: #f5f1f1;
 }
@@ -592,6 +621,7 @@ img {
 /* ===== MAIN = Hotels ===== */
 .filter {
 	display: flex;
+    justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 25px 70px 0;
 }
@@ -613,10 +643,33 @@ img {
 	color: #ffffff;
 }
 
+.filters-left-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .filter-list {
 	margin: 0;
 	position: relative;
 	list-style: none;
+}
+
+.filter-list label::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 24px;
+    left: 3px;
+    color: #ffffff;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-list input[type=checkbox]:checked+label::before {
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .filters li {
@@ -633,8 +686,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
     align-items: center;
-    margin-top: 10px;
-	margin-bottom: 20px;
+    margin-top: 12px;
 	padding: 0 70px;
 }
 
@@ -731,7 +783,7 @@ img {
 .hotel-item {
 	display: flex;
 	border-top: 1px solid #e5e5e5;
-	padding: 20px 70px 30px;
+	padding: 23px 70px 25px;
 }
 
 .hotel-item:last-child {
@@ -791,6 +843,7 @@ img {
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom: 40px;
+    padding: 0;
 }
 
 .hotel-item-rating li {
@@ -798,6 +851,7 @@ img {
 }
 
 .hotel-item-overall {
+    text-align: center;
     padding: 4px;
     background-color: #f2f2f2;
 }
